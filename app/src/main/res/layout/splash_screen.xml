@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:lootie="http://schemas.android.com/apk/res-auto">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/splash_animation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lootie:layout_constraintHorizontal_bias="1.0"
+        lootie:layout_constraintLeft_toLeftOf="parent"
+        lootie:layout_constraintRight_toRightOf="parent"
+        lootie:layout_constraintTop_toTopOf="parent"
+        lootie:layout_constraintBottom_toTopOf="@+id/creators"
+        lootie:layout_constraintVertical_bias="1.0"
+        lootie:lottie_autoPlay="true"
+        lootie:lottie_loop="true"
+        lootie:lottie_rawRes="@raw/splash" />
+
+    <TextView
+        android:id="@+id/creators"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/idir_abdelli_gaya_amoura"
+        lootie:layout_constraintLeft_toLeftOf="parent"
+        lootie:layout_constraintRight_toRightOf="parent"
+        lootie:layout_constraintBottom_toBottomOf="parent"
+        lootie:layout_constraintTop_toBottomOf="@+id/splash_animation"
+        android:layout_marginBottom="40dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
